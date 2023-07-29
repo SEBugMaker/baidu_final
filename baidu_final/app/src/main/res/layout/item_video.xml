@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:foreground="?android:attr/selectableItemBackground"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="4dp"
+    card_view:cardElevation="4dp"
+    android:orientation="vertical">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:id="@+id/video"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:padding="5dp"
+                android:src="@drawable/messi"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:id="@+id/video_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:text="标题"
+                android:textColor="#FFFFFF"
+                card_view:layout_constraintTop_toTopOf="parent"
+                android:background="#22000000"
+                android:textSize="30dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:layout_constraintTop_toBottomOf="@+id/video">
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="1"
+        android:padding="5dp"
+        android:gravity="center"
+        android:src="@drawable/daohang"
+        android:layout_gravity="left"/>
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="4"
+        android:gravity="center_vertical"
+        android:text="用户"
+        android:textSize="20dp"
+        android:layout_gravity="left"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="2"
+        android:padding="5dp"
+        android:gravity="center"
+        android:src="@drawable/daohang"
+        android:layout_gravity="left"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:layout_weight="2"
+        android:src="@drawable/like"
+        android:layout_gravity="left"/>
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight="2"
+        android:padding="5dp"
+        android:src="@drawable/dislike"
+        android:layout_gravity="left"/>
+
+</LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="68dp"
+                android:layout_height="75dp"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="64dp"
+                card_view:layout_constraintStart_toStartOf="@+id/video"
+                card_view:layout_constraintTop_toBottomOf="@+id/video_title"
+                card_view:srcCompat="@drawable/play" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

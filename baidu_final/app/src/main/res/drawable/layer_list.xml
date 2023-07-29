@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--
+         与顺序有关。最外层一定要放在最前面。最里层放在里面，
+         不然会被遮挡。也与item中设置的值大小有关系
+-->
+
+    <!-- 中间层 -->
+    <item
+        android:bottom="5dp"
+        android:left="5dp"
+        android:right="5dp"
+        android:top="5dp">
+        <shape>
+            <solid android:color="#ffffff" />
+        </shape>
+    </item>
+    <!-- 最里层 -->
+    <item
+        android:bottom="30dp"
+        android:left="30dp"
+        android:right="30dp"
+        android:top="30dp"
+        android:drawable="@drawable/search">
+        <shape>
+
+        </shape>
+    </item>
+
+</layer-list>

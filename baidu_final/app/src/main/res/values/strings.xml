@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">app_baidu_final</string>
+
+    <string name="search_hint">type to search</string>
+</resources>
