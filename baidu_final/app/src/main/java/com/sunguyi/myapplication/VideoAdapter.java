@@ -54,7 +54,7 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.ViewHolder> 
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         video_item video_item = videoList.get(position);
         holder.video_title.setText(video_item.getVideo_title());
-        holder.username.setText(video_item.getUsername());
+
         Glide.with(holder.video).load(video_item.getVideo_img()).into(holder.video);
     }
 
@@ -67,14 +67,12 @@ public class VideoAdapter extends RecyclerView.Adapter<VideoAdapter.ViewHolder> 
         View contactView;//存储解析到的view
         ImageView video;
         TextView video_title;
-        TextView username;
-        TextView tip;
+
 
         public ViewHolder(View view) {
             super(view);
             contactView = view;
             video_title = view.findViewById(R.id.video_title);
-            username = view.findViewById(R.id.username);
             video = view.findViewById(R.id.video);
         }
     }

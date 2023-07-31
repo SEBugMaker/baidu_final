@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context="com.sunguyi.myapplication.HomepageActivity">
 
 
@@ -15,6 +16,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="172dp"
         android:text="同步数据"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -24,6 +26,7 @@
         android:layout_height="43dp"
         android:layout_marginTop="64dp"
         android:text="版本说明"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
@@ -33,6 +36,7 @@
         android:layout_height="135dp"
         android:layout_marginLeft="112dp"
         android:layout_marginTop="40dp"
+        android:gravity="center"
         android:background="@drawable/yonghu"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -77,6 +81,17 @@
         android:layout_height="41dp"
         android:layout_marginTop="64dp"
         android:text="浏览历史"
+        app:layout_constraintStart_toStartOf="@+id/person_logo"
+        app:layout_constraintTop_toBottomOf="@+id/person_logo" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="62dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="20dp"
+        android:text="点击头像登陆"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="@+id/person_logo"
         app:layout_constraintTop_toBottomOf="@+id/person_logo" />
 
